@@ -8,20 +8,20 @@ AOS.init({
 // Project data
 const projects = [
     {
-        title: "Advanced Moderation Plugin",
-        description: "A comprehensive Minecraft plugin for server moderation with advanced features including auto-moderation, chat filtering, and punishment management.",
+        title: "Administrative Management System",
+        description: "A comprehensive Minecraft plugin providing advanced server administration capabilities, including automated moderation, content filtering, and infraction management.",
         tags: ["Java", "Paper", "Folia", "MySQL"],
         type: "minecraft"
     },
     {
-        title: "Multi-Purpose Discord Bot",
-        description: "Feature-rich Discord bot with moderation, music, economy, and utility commands. Supports multiple servers with customizable settings.",
+        title: "Multi-functional Discord Application",
+        description: "A versatile Discord application offering administrative tools, audio playback, virtual currency management, and utility functions. Supports multiple server configurations.",
         tags: ["TypeScript", "Discord.js", "MongoDB"],
         type: "discord"
     },
     {
-        title: "Game Statistics API",
-        description: "RESTful API service for tracking and analyzing player statistics across multiple game servers.",
+        title: "Gaming Analytics API",
+        description: "A RESTful service designed for collecting, analyzing, and reporting player statistics across multiple game servers with high performance and reliability.",
         tags: ["Go", "PostgreSQL", "Redis"],
         type: "backend"
     }
