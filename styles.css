@@ -1,0 +1,232 @@
+:root {
+    --primary-color: #2d3436;
+    --secondary-color: #00a8ff;
+    --accent-color: #ffa502;
+    --text-color: #f5f6fa;
+    --background-color: #0c0c0c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(12, 12, 12, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tech-stack {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.tech-stack i {
+    transition: transform 0.3s ease;
+}
+
+.tech-stack i:hover {
+    transform: translateY(-5px);
+    color: var(--secondary-color);
+}
+
+/* Skills Section */
+.skills {
+    padding: 5rem 1rem;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 5rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Animations */
+.animate-text {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.animate-text-delay {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tech-stack {
+        font-size: 2rem;
+        gap: 1rem;
+    }
+}
