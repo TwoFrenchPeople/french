@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Software Engineer</title>
-    <!-- ... existing links ... -->
+    <title>randomfrenchpeople - Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Removed duplicate title -->
 </head>
 <body>
     <!-- Header Section -->
@@ -13,8 +16,10 @@
             <div class="logo">randomfrenchpeople</div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Expertise</a></li>
-                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#expertise">Expertise</a></li> <!-- Fixed duplicate link id -->
+                <li><a href="#portfolio">Portfolio</a></li> <!-- Fixed duplicate link id -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -23,6 +28,8 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
+            <h1 class="animate-text">Full-Stack Developer</h1>
+            <p class="animate-text-delay">Specializing in Minecraft Plugins, Discord Bots, and Backend Development</p>
             <h1 class="animate-text">Software Engineer</h1>
             <p class="animate-text-delay">Experienced in Backend Development, Minecraft Plugins, and Discord Applications</p>
             <div class="tech-stack animate-text-delay">
@@ -37,7 +44,7 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2>Experience</h2>
+        <h2>Technical Expertise & Experience</h2> <!-- Combined both headings -->
         <div class="skills-grid">
             <div class="skill-card" data-aos="fade-up">
                 <i class="fas fa-cube"></i>
@@ -45,16 +52,19 @@
                 <ul>
                     <li>Paper & Folia Server Development</li>
                     <li>Custom Plugin Development</li>
+                    <li>Server Optimization</li>
+                    <li>Moderation Systems</li>
                 </ul>
             </div>
 
             <div class="skill-card" data-aos="fade-up">
                 <i class="fab fa-discord"></i>
-                <h3>Discord Applications</h3>
+                <h3>Discord Bot Development</h3>
                 <ul>
                     <li>TypeScript & Python</li>
-                    <li>Moderation</li>
-                    <li>Economy</li>
+                    <li>Moderation Systems</li>
+                    <li>Economy Features</li>
+                    <li>Music Integration</li>
                     <li>Giveaway and Ticketing</li>
                 </ul>
             </div>
@@ -63,10 +73,41 @@
                 <i class="fas fa-server"></i>
                 <h3>Backend Development</h3>
                 <ul>
-                    <li>Multi-language Programming</li>
+                    <li>Multiple Language Proficiency</li>
+                    <li>MongoDB & PostgreSQL</li>
+                    <li>RESTful APIs</li>
+                    <li>Microservices Architecture</li>
                     <li>API Development</li>
-                    <li>Can work and improve on existing work</li>
+                    <li>Experience with existing codebases</li> <!-- Clarified point -->
                 </ul>
             </div>
         </div>
     </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- Project cards will be dynamically loaded via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-links">
+                <a href="https://github.com/randomfrenchpeople" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://discord.com/users/randomfrenchpeople" class="discord-link"> <!-- Fixed link placeholder -->
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
